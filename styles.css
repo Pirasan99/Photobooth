@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FBF1F0;
+    text-align: center;
+}
+
+/* General Page Styling */
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none !important;  /* Ensures the element is completely removed */
+}
+
+
+#homePage {
+    background-color: #FBF1F0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push content apart */
+    align-items: center;
+    padding: 20px 0;
+}
+
+#homePage h1 {
+    color: #9E5200;
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 0 0 10px #fa9dd0;
+    margin: 5;
+}
+
+#homepageGif {
+    width: 700px; /* Adjust size as needed */
+    height: auto;
+    margin: auto; /* Centers the GIF */
+}
+
+#homePageButtons {
+    display: flex;
+    gap: 20px; /* Spacing between buttons */
+    margin-bottom: 40px;
+}
+
+button {
+    background-color: #9E5200;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #834503;
+}
+
+
+/* Camera Page */
+#cameraPage {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#cameraFeed {
+    width: 640px;
+    height: 480px;
+    object-fit: cover;
+    transform: scaleX(-1);
+    border: 5px solid white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    
+}
+
+#countdown {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    display: none;
+}
+
+.dots {
+    margin-top: 20px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    background-color: grey;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Customization Page Styling */
+#customizationPage {
+    background-color: #f8f0f0;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+}
+
+h2 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.color-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.color-btn {
+    width: 52px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Highlight selected color */
+.color-btn.selected {
+    border: 3px solid black; /* Stroke effect */
+}
+
+
+.color-btn.pink { background: #FAC6FF; }
+.color-btn.blue { background: #BFF4FF; }
+.color-btn.yellow { background: #FFF0AB; }
+.color-btn.grey { background: #EAE9E7; }
+
+#photostripPreview {
+    width: 150px;
+    height: 400px;
+    margin: 10px auto;
+}
+
+#photostripPreview img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#continueButton {
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#continueButton.hidden {
+    display: none;
+}
+
+#continueButton:hover {
+    background-color: darkred;
+}
+
+#finalPage {
+    background-color: #faebeb;
+    width: 100%;
+    height: 100vh;
+}
+
+
+#finalPhotostripContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 150px;
+    height: 400px;
+}
+
+#finalPhotostripCanvas {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+
+
+#downloadPhotostrip {
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#downloadPhotostrip:hover {
+    background-color: darkred;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photobooth</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="homePage" class="page">
+        <h1>PHOTOBOOTH</h1>
+        <img src="GIF.gif" alt="Photobooth Animation" id="homepageGif">
+        
+        <div id="homePageButtons">
+            <button id="useCamera">Take Pictures</button>
+            <button id="uploadPhotos">Upload Pictures</button>
+        </div>
+    </div>
+
+    <!-- Camera Page -->
+    <div id="cameraPage" class="page hidden">
+        <video id="cameraFeed" autoplay></video>
+        <div id="countdown">5</div>
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <!-- Customization Page -->
+    <div id="customizationPage" class="page hidden">
+        <h2>Customize your photostrip</h2>
+        
+        <p>Photostrip</p>
+        <div class="color-options">
+            <button class="color-btn grey" data-color="grey"></button>
+            <button class="color-btn pink" data-color="pink"></button>
+            <button class="color-btn blue" data-color="blue"></button>
+            <button class="color-btn yellow" data-color="yellow"></button>
+        </div>
+
+        <p>Preview</p>
+        <div id="photostripPreview">
+            <img id="photostripImage" src="photostrips/grey.png" alt="Photostrip Preview">
+        </div>
+
+        <button id="continueButton" class="hidden">Continue</button>
+    </div>
+
+    <!-- Final Page -->
+    <div id="finalPage" class="page hidden">
+        <h2>Your Photostrip</h2>
+        <div id="finalPhotostripContainer">
+            <canvas id="finalPhotostripCanvas"></canvas>
+        </div>
+        <button id="downloadPhotostrip">Download Photostrip</button>
+    </div>
+
+    <!-- Link to JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
